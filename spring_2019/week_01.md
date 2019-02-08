@@ -9,10 +9,12 @@ triggers:
   and by when, and we will notify them when they should get on the shuttle.
 - Nearby: When the app is in the foreground, we will notify the user when
   a shuttle on the selected route comes within a certain range.
+
 These notifications are triggered by `tryNotifyTime()` and `tryNotifyNearby()`
 in NotificationHandler, which are called whenever shuttle data is fetched.
 To help with the time notifications, I also created a  Time class that gets the
 time since the day began from a Date and has comparison operators.
+
 
 ## This Week's Plan
 This week, I plan to:
@@ -24,6 +26,7 @@ This week, I plan to:
   receive notifications and toggle routes on and off.
 - Make notifications display even when the app is in the foreground, as that
   is the only time nearby notifications will be received.
+
 
 ## Anything Blocking?
 The only blocker I've run into so far was not being able to use background
